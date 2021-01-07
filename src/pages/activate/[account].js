@@ -13,7 +13,7 @@ const NotFound = () => {
     if(account){
         const activationEmail = async () => {
             try {
-                const res = await axios.put('http://localhost:5000/api/auth/activate/', {activationToken:account})
+                const res = await axios.put('https://jyven-demo.herokuapp.com/api/auth/activate/', {activationToken:account})
                 console.log(res)
             } catch (err) {
                 console.log(err)
