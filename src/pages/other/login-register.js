@@ -142,9 +142,9 @@ const LoginRegister = () => {
                       </span>
                     </Col>
                     <Col lg={12} className="space-mb--30">
-                    <Button loading={isLoading} size='big' onClick={handleSignin} secondary>
-                        LOGIN
-                      </Button>
+                      <button onClick={handleSignin} className="lezada-button lezada-button--medium">
+                          login
+                        </button>
                     </Col>
                     <Col>
                       <input type="checkbox" />{" "}
@@ -226,9 +226,10 @@ const LoginRegister = () => {
 
                     </Col>
                     <Col lg={12} className="text-center">       
-                      <Button loading={isLoading} size='big' onClick={handleRegister} secondary>
-                        REGISTER
-                      </Button>
+                    
+                      <button onClick={handleRegister} className="lezada-button lezada-button--medium">
+                          register
+                        </button>
                     </Col>
                   </Row>
                 </form>
