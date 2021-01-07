@@ -58,10 +58,10 @@ const FooterOne = () => {
             <div className="footer-copyright-text">
               &copy; {new Date().getFullYear() + " "}
               <a href="https://www.hasthemes.com" target="_blank">
-                lezada
+                jyven
               </a>
               . All Rights Reserved | <span>(+00) 123 567990</span> |
-              contact@lezada.com
+              contact@jyven.com
             </div>
           </Col>
           <Col lg={3} md={12} className="text-left text-lg-right">

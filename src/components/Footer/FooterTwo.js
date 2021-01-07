@@ -42,7 +42,7 @@ const FooterTwo = () => {
             <div className="footer-single-widget__copyright">
               &copy; {new Date().getFullYear() + " "}
               <a href="https://www.hasthemes.com" target="_blank">
-                lezada
+                jyven
               </a>
               <span>All Rights Reserved</span>
             </div>

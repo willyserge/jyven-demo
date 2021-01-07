@@ -31,7 +31,7 @@ const FooterFour = () => {
         <Row>
           <Col className="footer-single-widget footer-single-widget--style2 space-mb--50">
             <p className="footer-email">
-              <a href="mailto:contact@lezada.com">contact@lezada.com</a>
+              <a href="mailto:contact@lezada.com">contact@jyven.com</a>
             </p>
             <p className="footer-phone">(+88) 123 4566 6868</p>
             <div className="store-icons space-mb--m20">
@@ -132,7 +132,7 @@ const FooterFour = () => {
           <Col md={4}>
             <div className="copyright-text space-mb--30">
               <p>
-                &copy; 2020 lezada.
+                &copy; 2021 jyven.
                 <span className="d-block space-mt--10">
                   All Rights Reserved
                 </span>
