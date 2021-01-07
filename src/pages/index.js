@@ -8,7 +8,7 @@ import heroSliderData1 from "../data/hero-sliders/hero-slider-one.json";
 import ser from "../data/hero-sliders/services.json";
 import { HoverBannerOne } from "../components/Banner";
 
-const Home = ({ newProducts, popularProducts, saleProducts }) => {
+const Home = ({ saleProducts }) => {
   return (
     <LayoutOne aboutOverlay={false}>
       {/* hero slider */}

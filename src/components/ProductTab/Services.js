@@ -7,7 +7,7 @@ const ProductTab = ({serviceProducts }) => {
   return (
     <div className="product-tab space-mb--r100">
       <Container>
-        <Tab.Container defaultActiveKey="popular">
+        <Tab.Container defaultActiveKey="sale">
           <Nav
             variant="pills"
             className="product-tab__navigation text-center justify-content-center space-mb--r60"
