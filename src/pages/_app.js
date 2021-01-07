@@ -9,7 +9,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { fetchProducts } from "../redux/actions/productActions";
 import products from "../data/products.json";
 import "../assets/scss/styles.scss";
-
+import 'semantic-ui-css/semantic.min.css'
 class MyApp extends App {
   constructor(props) {
     super(props);

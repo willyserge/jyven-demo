@@ -5,8 +5,24 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaCloudDownloadAlt, FaRegEdit } from "react-icons/fa";
 import { LayoutTwo } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
+import { useEffect } from "react";
+import { useRouter } from 'next/router'
+
 
 const MyAccount = () => {
+
+  useEffect(()=>{
+    if (!JSON.parse(localStorage.getItem('jwt'))) {
+      router.push('/other/login-register')
+    }
+  },[])
+
+  const router = useRouter()
+
+  const logout= ()=>{
+    localStorage.removeItem('jwt');
+  }
+ 
   return (
     <LayoutTwo>
       {/* breadcrumb */}
@@ -62,7 +78,7 @@ const MyAccount = () => {
                         href="/other/login-register"
                         as={process.env.PUBLIC_URL + "/other/login-register"}
                       >
-                        <a className="logout">Logout</a>
+                        <a className="logout" onClick={logout}>Logout</a>
                       </Link>
                       )
                     </p>
