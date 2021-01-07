@@ -1,12 +1,12 @@
 import { HeaderOne } from "../Header";
-import { FooterOne } from "../Footer";
+import { FooterTwo } from "../Footer";
 
 const LayoutOne = ({ children, aboutOverlay }) => {
   return (
     <div>
       <HeaderOne aboutOverlay={aboutOverlay} />
       {children}
-      <FooterOne />
+      <FooterTwo />
     </div>
   );
 };

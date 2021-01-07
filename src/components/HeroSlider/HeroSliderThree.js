@@ -32,7 +32,7 @@ const HeroSliderThree = ({ sliderData, spaceBottomClass }) => {
         spaceBottomClass ? spaceBottomClass : ""
       }`}
     >
-      <div className="hero-slider-three__wrapper">
+      <div className="hero-slider-three__wrapper space-mb--r100">
         <Swiper {...params}>
           {sliderData &&
             sliderData.map((single, i) => {
@@ -46,17 +46,17 @@ const HeroSliderThree = ({ sliderData, spaceBottomClass }) => {
                     <Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start h-100">
                       <Col lg={6} className="order-2 order-lg-1">
                         <div className="hero-slider-three__content">
-                          <h5 className="sub-title">{single.subtitle}</h5>
+                          <h5 className="sub-title">BRAND / CATEGORY</h5>
                           <h1
                             className="title"
-                            dangerouslySetInnerHTML={{ __html: single.title }}
+                            dangerouslySetInnerHTML={{ __html: "Lorem ipsum cosmetics ten" }}
                           />
-                          <div className="slider-link">
+                          <div className="image-cta__content">
                             <Link
                               href={single.url}
                               as={process.env.PUBLIC_URL + single.url}
                             >
-                              <a>shop collection</a>
+                              <a className="lezada-button lezada-button--medium" style={{color: "white", marginBottom: "1px"}}>SHOP NOW</a>
                             </Link>
                           </div>
                         </div>

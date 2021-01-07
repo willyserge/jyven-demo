@@ -32,7 +32,7 @@ const ProductGrid = ({
         className={bottomSpace ? bottomSpace : ""}
       >
         <div className="product-grid">
-          {/*=======  single product image  =======*/}
+          {/*=======  single product image  ======= */}
           <div className="product-grid__image">
             <Link
               href={`/shop/product-basic/[slug]?slug=${product.slug}`}
@@ -44,12 +44,14 @@ const ProductGrid = ({
                 <img
                   src={process.env.PUBLIC_URL + product.thumbImage[0]}
                   className="img-fluid"
+                  style={{borderRadius: "30px", maxHeight: "344px"}}
                   alt={product.name}
                 />
                 {product.thumbImage.length > 1 ? (
                   <img
                     src={process.env.PUBLIC_URL + product.thumbImage[1]}
                     className="img-fluid"
+                    style={{borderRadius: "30px", maxHeight: "344px"}}
                     alt={product.name}
                   />
                 ) : (

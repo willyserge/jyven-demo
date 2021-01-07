@@ -30,16 +30,11 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                       as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
                     >
                       <a>
-                        Wooden <span>Chair</span>
+                        BRAND / <span>CATEGORY</span>
                       </a>
                     </Link>
                   </p>
-                  <Link
-                    href="/shop/left-sidebar"
-                    as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-                  >
-                    <a>Shop Now</a>
-                  </Link>
+                  
                 </div>
               </div>
               <Link
@@ -70,16 +65,11 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                       as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
                     >
                       <a>
-                        Thumbler <span>Alarm Clock</span>
+                        BRAND / <span>CATEGORY</span>
                       </a>
                     </Link>
                   </p>
-                  <Link
-                    href="/shop/left-sidebar"
-                    as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-                  >
-                    <a>Shop Now</a>
-                  </Link>
+                  
                 </div>
               </div>
               <Link
@@ -110,16 +100,10 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                       as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
                     >
                       <a>
-                        Home <span>Decoration</span>
+                        BRAND / <span>CATEGORY</span>
                       </a>
                     </Link>
                   </p>
-                  <Link
-                    href="/shop/left-sidebar"
-                    as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-                  >
-                    <a>Shop Now</a>
-                  </Link>
                 </div>
               </div>
               <Link

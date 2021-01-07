@@ -25,90 +25,85 @@ const FooterTwo = () => {
     setScroll(window.scrollY);
   };
   return (
-    <footer className="bg-color--grey space-pt--100 space-pb--50">
-      <Container className="wide">
+    <footer className="space-pt--100 space-pb--50" style={{backgroundColor: "#333333", color: "white"}}>
+      <Container className="wide" style={{color: "white"}}>
         <Row>
           <Col className="footer-single-widget space-mb--50">
             {/* logo */}
             <div className="logo space-mb--35">
-              <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
-                className="img-fluid"
-                alt=""
-              />
             </div>
 
             {/*=======  copyright text  =======*/}
-            <div className="footer-single-widget__copyright">
+            <div className="footer-single-widget__copyright" style={{color: "white"}}>
               &copy; {new Date().getFullYear() + " "}
-              <a href="https://www.hasthemes.com" target="_blank">
+              <a href="https://www.hasthemes.com" target="_blank" style={{color: "white"}}>
                 jyven
               </a>
-              <span>All Rights Reserved</span>
+              <span style={{color: "white"}}>All Rights Reserved</span>
             </div>
           </Col>
 
           <Col className="footer-single-widget space-mb--50">
-            <h5 className="footer-single-widget__title">ABOUT</h5>
+            <h5 className="footer-single-widget__title" style={{color: "white"}}>ABOUT</h5>
             <nav className="footer-single-widget__nav">
-              <ul>
+              <ul style={{color: "white"}}>
                 <li>
-                  <a href="#">About us</a>
+                  <a href="#" style={{color: "white"}}>About us</a>
                 </li>
                 <li>
-                  <a href="#">Store location</a>
+                  <a href="#" style={{color: "white"}}>Store location</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#" style={{color: "white"}}>Contact</a>
                 </li>
                 <li>
-                  <a href="#">Orders tracking</a>
+                  <a href="#" style={{color: "white"}}>Orders tracking</a>
                 </li>
               </ul>
             </nav>
           </Col>
 
           <Col className="footer-single-widget space-mb--50">
-            <h5 className="footer-single-widget__title">USEFUL LINKS</h5>
+            <h5 className="footer-single-widget__title" style={{color: "white"}}>USEFUL LINKS</h5>
             <nav className="footer-single-widget__nav">
               <ul>
                 <li>
-                  <a href="#">Returns</a>
+                  <a href="#" style={{color: "white"}}>Returns</a>
                 </li>
                 <li>
-                  <a href="#">Support Policy</a>
+                  <a href="#" style={{color: "white"}}>Support Policy</a>
                 </li>
                 <li>
-                  <a href="#">Size guide</a>
+                  <a href="#" style={{color: "white"}}>Size guide</a>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <a href="#" style={{color: "white"}}>FAQs</a>
                 </li>
               </ul>
             </nav>
           </Col>
 
           <Col className="footer-single-widget space-mb--50">
-            <h5 className="footer-single-widget__title">FOLLOW US ON</h5>
+            <h5 className="footer-single-widget__title" style={{color: "white"}}>FOLLOW US ON</h5>
             <nav className="footer-single-widget__nav footer-single-widget__nav--social">
               <ul>
                 <li>
-                  <a href="https://www.twitter.com">
+                  <a href="https://www.twitter.com" style={{color: "white"}}>
                     <FaTwitter /> Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com">
+                  <a href="https://www.facebook.com" style={{color: "white"}}>
                     <FaFacebookF /> Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com">
+                  <a href="https://www.instagram.com" style={{color: "white"}}>
                     <FaInstagram /> Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com">
+                  <a href="https://www.youtube.com" style={{color: "white"}}>
                     <FaYoutube /> Youtube
                   </a>
                 </li>
@@ -118,8 +113,8 @@ const FooterTwo = () => {
 
           <Col className="footer-single-widget space-mb--50">
             <div className="footer-subscribe-widget">
-              <h2 className="footer-subscribe-widget__title">Subscribe.</h2>
-              <p className="footer-subscribe-widget__subtitle">
+              <h2 className="footer-subscribe-widget__title" style={{color: "white"}}>Subscribe.</h2>
+              <p className="footer-subscribe-widget__subtitle" style={{color: "white"}}>
                 Subscribe to our newsletter to receive news on update.
               </p>
               {/* email subscription */}

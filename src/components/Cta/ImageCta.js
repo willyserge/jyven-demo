@@ -15,21 +15,6 @@ const ImageCta = ({ image, tags, title, url }) => {
                 alt=""
               />
             </div>
-            {/*=======  tags  =======*/}
-            <div className="image-cta__tags space-mb--35">
-              <ul>
-                {tags &&
-                  tags.map((tag, i) => {
-                    return (
-                      <li key={i}>
-                        <Link href={url} as={process.env.PUBLIC_URL + url}>
-                          <a>#{tag}</a>
-                        </Link>
-                      </li>
-                    );
-                  })}
-              </ul>
-            </div>
 
             {/*=======  content  =======*/}
             <div className="image-cta__content">

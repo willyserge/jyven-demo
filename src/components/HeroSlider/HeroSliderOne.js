@@ -1,12 +1,12 @@
 import Swiper from "react-id-swiper";
 import Link from "next/link";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const HeroSliderOne = ({ sliderData }) => {
   const params = {
     loop: true,
     speed: 1000,
-    spaceBetween: 200,
+    spaceBetween: 300,
     // autoplay: {
     //   delay: 5000,
     //   disableOnInteraction: false,
@@ -24,47 +24,46 @@ const HeroSliderOne = ({ sliderData }) => {
     )
   };
   return (
-    <div className="hero-slider-one space-mb--r100">
+    <div className="hero-slider-one text-center space-mb--r100">
+    <div className="image-cta__content text-center space-mb--50">
+      <h2 className="space-mb--30">Deals For You</h2>
+    </div>
+    <div>
       <Container>
         <div className="hero-slider-one__wrapper">
           <Swiper {...params}>
             {sliderData &&
               sliderData.map((single) => {
                 return (
-                  <div
-                    className="hero-slider-one__slide swiper-slide"
-                    key={single.id}
-                  >
-                    <div className="slider-image">
+                <Row>
+                  <Col lg={8} className="ml-auto mr-auto">
+                    {/*=======  image  =======*/}
+                    <div className="image-cta__image space-mb--35 space-ml--100">
                       <img
                         src={process.env.PUBLIC_URL + single.image}
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div className="slider-content">
-                      <h2 className="color-title color-title--blue space-mb--20">
-                        {single.subtitle}
-                      </h2>
-                      <h1
-                        className="main-title space-mb--30"
-                        dangerouslySetInnerHTML={{ __html: single.title }}
+                    {/*=======  content  =======*/}
+                    <div className="image-cta__content">
+                      <h3 className="sub-title">BRAND NAME</h3>
+                      <h2
+                        className="space-mb--30"
+                        dangerouslySetInnerHTML={{ __html: "Offer and major sale running copies" }}
                       />
-                      <Link
-                        href={single.url}
-                        as={process.env.PUBLIC_URL + single.url}
-                      >
-                        <a className="lezada-button lezada-button--medium">
-                          shop now
-                        </a>
+                      <Link href={single.url} as={process.env.PUBLIC_URL + single.url}>
+                        <a className="lezada-button lezada-button--medium">SHOP NOW</a>
                       </Link>
                     </div>
-                  </div>
+                  </Col>
+                </Row>
                 );
               })}
           </Swiper>
         </div>
       </Container>
+    </div>
     </div>
   );
 };
