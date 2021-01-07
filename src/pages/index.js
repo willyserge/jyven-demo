@@ -1,32 +1,30 @@
 import { connect } from "react-redux";
 import { getProducts } from "../lib/product";
 import { LayoutOne } from "../components/Layout";
-import { HeroSliderOne } from "../components/HeroSlider";
-import { ProductTab } from "../components/ProductTab";
-import { ImageCta } from "../components/Cta";
-import heroSliderData from "../data/hero-sliders/hero-slider-one.json";
-import imageCtaData from "../data/image-cta/image-cta-one.json";
+import { HeroSliderOne, HeroSliderThree } from "../components/HeroSlider";
+import { ProductTab, Services } from "../components/ProductTab";
+import heroSliderData from "../data/hero-sliders/hero-slider-three.json";
+import heroSliderData1 from "../data/hero-sliders/hero-slider-one.json";
+import ser from "../data/hero-sliders/services.json";
+import { HoverBannerOne } from "../components/Banner";
 
 const Home = ({ newProducts, popularProducts, saleProducts }) => {
   return (
     <LayoutOne aboutOverlay={false}>
       {/* hero slider */}
-      <HeroSliderOne sliderData={heroSliderData} />
+      <HeroSliderThree sliderData={heroSliderData} />
+
+      <HoverBannerOne spaceBottomClass="space-mb--r100" />
 
       {/* product tab */}
       <ProductTab
-        newProducts={newProducts}
-        popularProducts={popularProducts}
         saleProducts={saleProducts}
       />
 
-      {/* image cta */}
-      <ImageCta
-        image={imageCtaData.image}
-        tags={imageCtaData.tags}
-        title={imageCtaData.title}
-        url={imageCtaData.url}
-      />
+      <Services serviceProducts={ser} />
+
+      <HeroSliderOne sliderData={heroSliderData1} />
+      
     </LayoutOne>
   );
 };
@@ -34,9 +32,8 @@ const Home = ({ newProducts, popularProducts, saleProducts }) => {
 const mapStateToProps = (state) => {
   const products = state.productData;
   return {
-    newProducts: getProducts(products, "decor", "new", 9),
-    popularProducts: getProducts(products, "decor", "popular", 9),
-    saleProducts: getProducts(products, "decor", "sale", 9)
+    saleProducts: getProducts(products, "decor", "topRated", 6),
+    
   };
 };
 
